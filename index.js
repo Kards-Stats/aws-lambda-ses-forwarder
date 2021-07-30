@@ -36,24 +36,14 @@ console.log("AWS Lambda SES Forwarder // @arithmetric // Version 5.0.0");
 //
 //   To match all email addresses matching no other mapping, use "@" as a key.
 var defaultConfig = {
-  fromEmail: "noreply@example.com",
+  fromEmail: "forwarder@kards-stats.com",
   subjectPrefix: "",
-  emailBucket: "s3-bucket-name",
-  emailKeyPrefix: "emailsPrefix/",
+  emailBucket: "ses-kards-stats",
+  emailKeyPrefix: "",
   allowPlusSign: true,
   forwardMapping: {
-    "info@example.com": [
-      "example.john@example.com",
-      "example.jen@example.com"
-    ],
-    "abuse@example.com": [
-      "example.jim@example.com"
-    ],
-    "@example.com": [
-      "example.john@example.com"
-    ],
-    "info": [
-      "info@example.com"
+    "@kards-stats.com": [
+      "klutzybubbles7@gmail.com"
     ]
   }
 };
